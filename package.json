@@ -1,0 +1,25 @@
+{
+  "name": "lowfans-radar",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:cloudflare": "CLOUDFLARE_PAGES=1 next build",
+    "deploy:cloudflare": "npm run build:cloudflare && wrangler pages deploy out --project-name=lowfans-radar",
+    "start": "next start"
+  },
+  "dependencies": {
+    "lucide-react": "latest",
+    "next": "^16.4.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}
